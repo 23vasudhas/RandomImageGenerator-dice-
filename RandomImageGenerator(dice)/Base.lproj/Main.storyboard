@@ -1,24 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Ei-IR-soA">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="VIh-CI-fxS">
+            <objects>
+                <viewController id="1Ei-IR-soA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQX-gC-Me7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="talking man" translatesAutoresizingMaskIntoConstraints="NO" id="kWu-KA-gYI">
+                                <rect key="frame" x="20" y="116" width="204" height="331"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="speech bubble" translatesAutoresizingMaskIntoConstraints="NO" id="ZMv-Sq-H7E">
+                                <rect key="frame" x="154" y="44" width="240" height="197"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKh-fb-pMw">
+                                <rect key="frame" x="89" y="530" width="39" height="45"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="red">
+                                    <color key="titleColor" red="1" green="0.028078071964938167" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="OUH-b8-noZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDe-c0-Yzy">
+                                <rect key="frame" x="173" y="530" width="68" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="green">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.11821395495069265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIL-EX-Pgi">
+                                <rect key="frame" x="215" y="1054" width="47" height="45"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="blue">
+                                    <color key="titleColor" red="0.0" green="0.097714149764354996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click which color you would like your dice to be." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-kC-hDz">
+                                <rect key="frame" x="185" y="27" width="179" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-EJ-9Y5">
+                                <rect key="frame" x="293" y="530" width="47" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="blue">
+                                    <color key="titleColor" red="0.0" green="0.11076081941033866" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88167582377177955" green="0.93364198460779657" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZMv-Sq-H7E" firstAttribute="leading" secondItem="zYp-fh-Mqj" secondAttribute="leading" constant="154" id="1zc-k6-MIc"/>
+                            <constraint firstItem="LKh-fb-pMw" firstAttribute="top" secondItem="kWu-KA-gYI" secondAttribute="bottom" constant="83" id="3dL-O9-nC7"/>
+                            <constraint firstItem="zYp-fh-Mqj" firstAttribute="bottom" secondItem="LKh-fb-pMw" secondAttribute="bottom" constant="287" id="7EE-C7-rP0"/>
+                            <constraint firstItem="ZMv-Sq-H7E" firstAttribute="top" secondItem="zYp-fh-Mqj" secondAttribute="top" id="7Ye-JS-6gK"/>
+                            <constraint firstItem="kWu-KA-gYI" firstAttribute="top" secondItem="zYp-fh-Mqj" secondAttribute="top" constant="72" id="Gpx-yG-bBp"/>
+                            <constraint firstItem="LKh-fb-pMw" firstAttribute="leading" secondItem="zYp-fh-Mqj" secondAttribute="leading" constant="89" id="HD4-Ia-ayw"/>
+                            <constraint firstItem="kWu-KA-gYI" firstAttribute="leading" secondItem="zYp-fh-Mqj" secondAttribute="leading" constant="20" id="I9k-uT-mVj"/>
+                            <constraint firstItem="kIL-EX-Pgi" firstAttribute="top" secondItem="ZMv-Sq-H7E" secondAttribute="bottom" constant="289" id="Pln-Me-VDU"/>
+                            <constraint firstItem="zYp-fh-Mqj" firstAttribute="trailing" secondItem="kWu-KA-gYI" secondAttribute="trailing" constant="190" id="Xde-VE-k55"/>
+                            <constraint firstItem="zYp-fh-Mqj" firstAttribute="trailing" secondItem="ZMv-Sq-H7E" secondAttribute="trailing" constant="20" id="g2Q-dd-psT"/>
+                            <constraint firstItem="LKh-fb-pMw" firstAttribute="top" secondItem="kWu-KA-gYI" secondAttribute="bottom" constant="83" id="vji-xt-70q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zYp-fh-Mqj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMc-HP-pCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328.98550724637681" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomImageGenerator_dice_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWp-XD-Tda">
+                                <rect key="frame" x="20" y="200" width="174" height="255"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GRz-dF-vQj">
+                                <rect key="frame" x="219" y="200" width="175" height="255"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSk-Qq-qOI">
+                                <rect key="frame" x="126" y="522" width="163" height="45"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="roll the dice!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFD-dM-lZC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.91068242288544543" blue="0.83883649969323493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FSk-Qq-qOI" firstAttribute="top" secondItem="PWp-XD-Tda" secondAttribute="bottom" constant="67" id="6I2-g0-z4N"/>
+                            <constraint firstItem="FSk-Qq-qOI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="70B-oK-UKc"/>
+                            <constraint firstItem="PWp-XD-Tda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Eo4-ud-6OU"/>
+                            <constraint firstItem="FSk-Qq-qOI" firstAttribute="top" secondItem="PWp-XD-Tda" secondAttribute="bottom" constant="67" id="LEN-HR-Cdl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GRz-dF-vQj" secondAttribute="trailing" constant="20" id="LZ3-Q6-NLi"/>
+                            <constraint firstItem="GRz-dF-vQj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="SmJ-yu-ZSg"/>
+                            <constraint firstItem="GRz-dF-vQj" firstAttribute="leading" secondItem="PWp-XD-Tda" secondAttribute="trailing" constant="25" id="Ued-Ls-ePf"/>
+                            <constraint firstItem="PWp-XD-Tda" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="hcO-BO-C3W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FSk-Qq-qOI" secondAttribute="bottom" constant="295" id="laA-a8-mWR"/>
+                            <constraint firstItem="FSk-Qq-qOI" firstAttribute="top" secondItem="GRz-dF-vQj" secondAttribute="bottom" constant="67" id="qfJ-sT-qF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FSk-Qq-qOI" secondAttribute="trailing" constant="125" id="r7a-Dq-I0g"/>
+                            <constraint firstItem="GRz-dF-vQj" firstAttribute="leading" secondItem="PWp-XD-Tda" secondAttribute="trailing" constant="25" id="u4H-li-KkA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dice1" destination="PWp-XD-Tda" id="m6t-YB-MFD"/>
+                        <outlet property="dice2" destination="GRz-dF-vQj" id="ykq-cr-REt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="504" y="99"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="speech bubble" width="900" height="721"/>
+        <image name="talking man" width="434" height="665"/>
+    </resources>
 </document>
